@@ -4,7 +4,7 @@ import React from 'react';
 import dynamic from 'next/dynamic';
 const ReactPlayer = dynamic(() => import('react-player/lazy'), { ssr: false });
 
-const Playercenter = () => {
+export default function Playercenter() {
     var playUrl = "http://snergal.live:8088/hls/snerg.m3u8";
     const [isStreamLoaded, setIsStreamLoaded] = React.useState(false);
     const [isStreamFailed, setIsStreamFailed] = React.useState(false);
@@ -40,5 +40,3 @@ const Playercenter = () => {
         </>
     )
 }
-
-export default Playercenter;
