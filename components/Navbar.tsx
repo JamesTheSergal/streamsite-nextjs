@@ -1,7 +1,8 @@
+import '../app/globals.css'
 import React from "react";
 import Link from "next/link";
 
-const Navbar = () => {
+export default function Navbar() {
     return(
         <div className="navbar bg-base-300">
             <div className="flex-1">
@@ -12,10 +13,12 @@ const Navbar = () => {
                     <li>
                         <Link href="/">Home</Link>
                     </li>
+                    <li>
+                        <Link href="/about">About</Link>
+                    </li>
                 </ul>
             </div>
         </div>
-    )
+    );
 }
 
-export default Navbar;
