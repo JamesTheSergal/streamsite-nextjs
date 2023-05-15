@@ -36,16 +36,16 @@ export default function About() {
                 <p>You can find the frontend and backend (Also written by me) on my <a href="https://github.com/JamesTheSergal">GitHub</a>. </p>
                 <h2>Cloud-Hosting</h2>
                 <p>I am currently using <b>Hetzner Online GmbH</b> to host the front end, and backend. They offer extremely affordable, high-performance servers as well as a world class network so that I have plenty of bandwidth.</p>
-                <p>The main thing I am concerned about is bandwidth to compete with the likes of Amazon. Hetzner has 10Gbe links to each of their VPS services, so there\'s no problem there.</p>
-                <p>I also feel a bit more secure with this company since they aren\'t US based, though have data-centers in the US.</p>
+                <p>The main thing I am concerned about is bandwidth to compete with the likes of Amazon. Hetzner has 10Gbe links to each of their VPS services, so there&#39;s no problem there.</p>
+                <p>I also feel a bit more secure with this company since they aren&#39;t US based, though have data-centers in the US.</p>
                 <h4>Architecture</h4>
                 <p>Currently, the platform relies on <b>Nginx</b>, and their HLS stream module with <b>FFmpeg</b> transcoding each stream to provide video resolutions to as many devices as possible. This also helps me regulate outboud traffic, since Hetzner does charge per TB.</p>
                 <p>Each stream is transcoded to 1080p, 720p, and 480p. This is to ensure that the stream is viewable on as many devices as possible, and as many data rates as possible.</p>
                 <p>With these different qualities I have to support, I have split the class of servers up as well:</p>
                 <ul>
-                    <li><b>Frontend</b> - These servers are scaled infreqently with load, as they don\'t transfer too much data. They can be scaled easily once a Hetzner load balancer is applied.</li>
+                    <li><b>Frontend</b> - These servers are scaled infreqently with load, as they don&#39;t transfer too much data. They can be scaled easily once a Hetzner load balancer is applied.</li>
                     <li><b>Transcoding</b> - These servers are scaled with load, as they are the ones that are doing the transcoding. They are also the ones that are doing the most work, so they are scaled with load. Lower quality video streams need the least servers, and there will always be a large amount of servers running to process HD video. It will be the main cost of this service.</li>
-                    <li><b>Database</b> - These servers will not scale often, and I don\'t have a solid grasp on what the work load will look like quite yet. They use MySQL, and a Python based API.</li>
+                    <li><b>Database</b> - These servers will not scale often, and I don&#39;t have a solid grasp on what the work load will look like quite yet. They use MySQL, and a Python based API.</li>
                 </ul>
                 <h2>Future Plans</h2>
                 <p>As of right now, I am working on the frontend and backend. I am also working on the transcoding servers, and the database.</p>
