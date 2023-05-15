@@ -1,6 +1,4 @@
-import Navbar from '../components/Navbar'
-import Playercenter from '../components/Playercenter'
-
+import React from 'react'
 
 export const metadata = {
   title: 'Snergal.live',
@@ -16,8 +14,6 @@ export default function RootLayout({
     <>
       <html lang="en">
         <body>
-          <Navbar />
-          <Playercenter />
           {children}
         </body>
       </html>
