@@ -5,7 +5,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
     title: 'About Snergal.live',
-    description: 'Streaming platform for Snergal',
+    description: 'Snergal.live is a project that aims to provide an underdog streaming platform that is not controlled by big tech, and uses Ethereum.',
   }
 
 export default function About() {
