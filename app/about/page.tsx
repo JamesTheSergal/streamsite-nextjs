@@ -11,14 +11,14 @@ export const metadata: Metadata = {
 export default function About() {
     return (
         <>
-        <div className="container mx-auto rounded-lg shadow-lg">
+        <div className="flex flex-col rounded-lg shadow-lg items-center">
             <div style={{textAlign: "center"}}>
-                <article className="prose">
+                <article className="prose prose-lg">
                     <h1 className="text-white">About Me</h1>
                     <br></br>
                 </article>
             </div>
-            <article className="prose text-white" >
+            <article className="prose prose-lg text-white" >
                 <h4 className="text-white">Snergal.live is a project made by <a style={{color: "#7289da"}}>James the Sergal#9369 (On Discord)</a></h4>
                 <Image className="rounded border-solid border-4 border-[#7289da] shadow-lg" src="/sergal.png" alt="Snergal" width={128} height={128} />
                 <p>Yes, I am one person developing this project. It has been on my mind for quite a while, and I wanted to give it a shot.</p>
